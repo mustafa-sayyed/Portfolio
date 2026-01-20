@@ -20,9 +20,9 @@ function Hero() {
   ];
 
   return (
-    <motion.div className="flex font-semibold items-center justify-center min-h-screen z-50 px-4">
-      <div className="z-50">
-        <motion.div className="flex items-center justify-between w-full h-16">
+    <div className="min-h-screen">
+      <div>
+        <div className="flex items-center justify-between w-full h-16">
           <a href="/" target="_blank">
             <Button variant="outline" className="rounded-full cursor-pointer">
               Mustafa Sayyed
@@ -42,7 +42,7 @@ function Hero() {
               </Button>
             ))}
           </div>
-        </motion.div>
+        </div>
         <motion.hr
           className="h-0.5 w-full"
           initial={{ width: 0 }}
@@ -74,7 +74,7 @@ function Hero() {
           transition={{ duration: 1}}
         />
       </div>
-    </motion.div>
+    </div>
   );
 }
 
