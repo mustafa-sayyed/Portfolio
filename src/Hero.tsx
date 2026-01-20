@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Button } from "./components/ui/button";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import profilePic from "./assets/profile.png";
 
 function Hero() {
   const iconMenu = [
@@ -47,31 +48,28 @@ function Hero() {
           className="h-0.5 w-full"
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
-          transition={{ duration: 1}}
+          transition={{ duration: 1 }}
         />
         <div className="flex items-center justify-center flex-col h-[85vh]">
-          <motion.h1
-            className="text-6xl sm:text-8xl lg:text-9xl z-50 text-center"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            Mustafa Sayyed
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mt-8 text-center font-light"
-          >
-            Hey there 👋, I am Sayyed Mustafa, Full Stack Dev and A curious programmer who loves building and shipping projects / products.
-          </motion.p>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <img
+              src={profilePic}
+              alt="Mustafa Sayyed"
+              className="w-64 h-64 rounded-full object-cover"
+            />
+            <div className="text-center sm:text-left">
+              <motion.h1 className="text-4xl sm:text-5xl z-50">Mustafa Sayyed</motion.h1>
+              <motion.p className="mt-4 max-w-104 font-light">
+                Hey there 👋, I am Mustafa Sayyed, I love building real-world products using modern web technologies and enjoy diving deep into how things work rather than just making them work.
+              </motion.p>
+            </div>
+          </div>
         </div>
         <motion.hr
           className="h-0.5 w-full"
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
-          transition={{ duration: 1}}
+          transition={{ duration: 1 }}
         />
       </div>
     </div>

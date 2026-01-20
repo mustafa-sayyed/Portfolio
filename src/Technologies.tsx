@@ -3,7 +3,17 @@ import { BiLogoJavascript, BiLogoTailwindCss, BiLogoTypescript } from "react-ico
 import { FaCss3, FaDocker, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa6";
 import { Button } from "./components/ui/button";
 import { DiMongodb } from "react-icons/di";
-import { SiExpress, SiGit, SiGithubactions, SiMongoose, SiNginx, SiPrisma, SiReactquery, SiShadcnui } from "react-icons/si";
+import {
+  SiExpress,
+  SiGit,
+  SiGithubactions,
+  SiMongoose,
+  SiNginx,
+  SiPrisma,
+  SiReactquery,
+  SiRedux,
+  SiShadcnui,
+} from "react-icons/si";
 
 const menu = [
   {
@@ -32,18 +42,23 @@ const menu = [
   },
   {
     icon: FaCss3,
-    name: "CSS"
+    name: "CSS",
   },
   {
     icon: DiMongodb,
-    name: "MongoDB"
+    name: "MongoDB",
   },
   {
     icon: SiMongoose,
-    name: "Mongoose"
-  },{
+    name: "Mongoose",
+  },
+  {
+    icon: SiRedux,
+    name: "React Redux",
+  },
+  {
     icon: SiShadcnui,
-    name: "Shadcn UI"
+    name: "Shadcn UI",
   },
   {
     icon: FaGithub,
@@ -55,19 +70,19 @@ const menu = [
   },
   {
     icon: SiExpress,
-    name: "Express.js"
+    name: "Express.js",
   },
   {
     icon: SiNginx,
-    name: "Nginx"
+    name: "Nginx",
   },
   {
     icon: SiGithubactions,
-    name: "GitHub Actions"
+    name: "GitHub Actions",
   },
   {
     icon: SiPrisma,
-    name: "Prisma"
+    name: "Prisma",
   },
   {
     icon: FaDocker,
@@ -75,14 +90,13 @@ const menu = [
   },
   {
     icon: SiReactquery,
-    name: "React Query"
-  }
-
+    name: "React Query",
+  },
 ];
 
 function Technologies() {
   return (
-    <div className="min-h-[90vh]">
+    <div>
       <div className="h-[85vh] ">
         <motion.h1 className="text-6xl font-semibold text-left">Tech Stack</motion.h1>
         <div className="flex flex-wrap gap-2 mt-10">
@@ -98,8 +112,8 @@ function Technologies() {
       <motion.hr
         className="h-0.5 w-full"
         initial={{ width: 0 }}
-        animate={{ width: "100%" }}
         transition={{ duration: 1 }}
+        whileInView={{ width: "100%" }}
       />
     </div>
   );

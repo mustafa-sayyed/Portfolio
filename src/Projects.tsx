@@ -1,4 +1,15 @@
 import {motion} from"motion/react"
+
+const projects = [
+  {
+    name: "SnapShop",
+    link: "https://snapshop.mustafasayyed.dev",
+    image: "",
+    description: "An e-commerce web application built with React, Node.js, and MongoDB, featuring user authentication, product management, and a shopping cart system.",
+  }
+]
+
+
 function Projects() {
   return (
     <div className="min-h-[90vh]">

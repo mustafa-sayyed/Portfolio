@@ -12,7 +12,7 @@ function App() {
           backgroundImage: `radial-gradient(circle 500px at 50% 200px, #3e3e3e, transparent)`,
         }}
       />
-      <div className="w-full px-4 sm:px-8 md:max-w-5xl z-50">
+      <div className="w-full px-4 sm:px-8 md:max-w-4xl z-50">
         <Hero />
         <About />
         <Projects />
