@@ -1,5 +1,6 @@
+import About from "./About";
 import Hero from "./Hero";
-import Project from "./Project";
+import Projects from "./Projects";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         }}
       />
       <Hero />
-      <Project />
+      <About />
+      <Projects />
     </div>
   );
 }

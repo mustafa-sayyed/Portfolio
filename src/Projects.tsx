@@ -1,5 +1,5 @@
 
-function Project() {
+function Projects() {
   return (
     <div className="min-h-[90vh]">
         <div></div>
@@ -7,4 +7,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Projects;

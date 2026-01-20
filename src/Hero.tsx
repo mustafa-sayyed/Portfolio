@@ -47,7 +47,7 @@ function Hero() {
           className="h-0.5 w-full"
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
-          transition={{ duration: 0.8}}
+          transition={{ duration: 1}}
         />
         <div className="flex items-center justify-center flex-col h-[85vh]">
           <motion.h1
@@ -65,18 +65,13 @@ function Hero() {
             className="mt-8 text-center font-light"
           >
             Hey there 👋, I am Sayyed Mustafa, Full Stack Dev and A curious programmer who loves building and shipping projects / products.
-            {/* I'm a passionate full-stack developer with a keen eye for
-            creating seamless user experiences. Currently focused on building modern web
-            applications using React, TypeScript, and cutting-edge technologies. When I'm
-            not coding, you'll find me diving into open-source projects or experimenting
-            with new frameworks. */}
           </motion.p>
         </div>
         <motion.hr
           className="h-0.5 w-full"
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
-          transition={{ duration: 2}}
+          transition={{ duration: 1}}
         />
       </div>
     </motion.div>
