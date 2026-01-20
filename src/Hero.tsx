@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import { Button } from "./components/ui/button";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import Icon from "@/assets/icon.png";
 
 function Hero() {
   const iconMenu = [
@@ -48,7 +47,7 @@ function Hero() {
           className="h-0.5 w-full"
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
-          transition={{ duration: 2}}
+          transition={{ duration: 0.8}}
         />
         <div className="flex items-center justify-center flex-col h-[85vh]">
           <motion.h1
@@ -65,7 +64,7 @@ function Hero() {
             transition={{ duration: 0.8 }}
             className="mt-8 text-center font-light"
           >
-            Hey there 👋, I am Sayyed Mustafa, Full Stack Dev and A curious programmer who loves building and shipping projects / pr0ducts.
+            Hey there 👋, I am Sayyed Mustafa, Full Stack Dev and A curious programmer who loves building and shipping projects / products.
             {/* I'm a passionate full-stack developer with a keen eye for
             creating seamless user experiences. Currently focused on building modern web
             applications using React, TypeScript, and cutting-edge technologies. When I'm
