@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import HorizontalLine from "./components/HorizontalLine";
 
 function About() {
@@ -12,8 +11,8 @@ function About() {
             designing systems that are scalable, secure, and maintainable.
           </p>
           <p>
-            What sets me apart is how I learn. I don’t pke treating technologies as black
-            boxes — I prefer understanding things from first principles. I pke
+            What sets me apart is how I learn. I don’t like treating technologies as black
+            boxes — I prefer understanding things from first principles. I like
             experimenting, breaking things, fixing them, and then rebuilding them better.
           </p>
         </div>
