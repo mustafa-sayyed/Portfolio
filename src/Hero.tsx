@@ -1,26 +1,13 @@
 import { motion } from "motion/react";
 import { Button } from "./components/ui/button";
-import { FaGithub, FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import profilePic from "./assets/profile.png";
 import HorizontalLine from "./components/HorizontalLine";
 import Connect from "./Connect";
+import { useTheme } from "./context/useTheme";
+import { Moon, Sun } from "lucide-react";
 
 function Hero() {
-  const iconMenu = [
-    {
-      link: "https://github.com/mustafa-sayyed",
-      icon: FaGithub,
-    },
-    {
-      link: "https://linkedin.com/in/mustafa-sayyed",
-      icon: FaLinkedin,
-    },
-    {
-      link: "https://x.com/_sayyed_mustafa",
-      icon: FaXTwitter,
-    },
-  ];
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div>
@@ -32,17 +19,15 @@ function Hero() {
         </a>
 
         <div className="flex items-center gap-2">
-          {iconMenu.map((menu) => (
-            <Button
-              variant="outline"
-              className="cursor-pointer rounded-full p-3 py-5"
-              key={menu.link}
-            >
-              <a href={menu.link} target="_blank">
-                <menu.icon />
-              </a>
-            </Button>
-          ))}
+          <Button
+            variant="outline"
+            className="cursor-pointer"
+            onClick={() => toggleTheme()}
+          >
+            {theme === "light" ?
+              <Sun />
+            : <Moon />}
+          </Button>
         </div>
       </div>
       <motion.hr
@@ -56,10 +41,12 @@ function Hero() {
           <img
             src={profilePic}
             alt="Mustafa Sayyed"
-            className="object-cover opacity-80 w-40 h-40 rounded-full"
+            className="object-cover dark:opacity-80 w-40 h-40 rounded-full"
           />
-          <div className="text-center sm:text-left flex flex-col gap-6">
-            <motion.h1 className="text-3xl sm:text-5xl z-50 text-gray-400">Mustafa Sayyed</motion.h1>
+          <div className="text-center sm:text-left flex flex-col gap-5">
+            <motion.h1 className="text-3xl sm:text-5xl z-50 dark:text-gray-400">
+              Mustafa Sayyed
+            </motion.h1>
             <Connect />
           </div>
         </div>

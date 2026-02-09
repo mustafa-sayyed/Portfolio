@@ -28,7 +28,7 @@ const connectMenus = [
   },
   {
     name: "GitHub",
-    link: "https://github.com/sayyed-mustafa",
+    link: "https://github.com/mustafa-sayyed",
     icon: GrGithub,
   },
   {
