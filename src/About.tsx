@@ -1,12 +1,12 @@
 import HorizontalLine from "./components/HorizontalLine";
-import { motion } from "motion/react";
+import Title from "./components/Title";
 
 function About() {
   return (
     <div>
       <div className="flex w-full flex-col">
         <div className="flex flex-col gap-4 font-light">
-          <motion.h1 className="text-2xl font-semibold mb-2">About me</motion.h1>
+          <Title title="About me" />
           <p>
             Hey there 👋, I am Mustafa Sayyed, I love building real-world products using
             modern web technologies and enjoy diving deep into how things work rather than

@@ -14,6 +14,8 @@ import {
   SiRedux,
   SiShadcnui,
 } from "react-icons/si";
+import Title from "./components/Title";
+import HorizontalLine from "./components/HorizontalLine";
 
 const menu = [
   {
@@ -97,9 +99,10 @@ const menu = [
 function Technologies() {
   return (
     <div>
-      <div className="h-[85vh] ">
-        <motion.h1 className="text-6xl font-semibold text-left">Tech Stack</motion.h1>
-        <div className="flex flex-wrap gap-2 mt-10">
+      <div className="min-h-[70vh]">
+        <Title title="Technologies" />
+        <p className="text-lg font-light mt-2">Here are some of the technologies I work with:</p>
+        <div className="flex flex-wrap gap-2 mt-8">
           {menu.map((item, index) => (
             <Button key={index} variant={"outline"}>
               <item.icon />
@@ -108,13 +111,7 @@ function Technologies() {
           ))}
         </div>
       </div>
-
-      <motion.hr
-        className="h-0.5 w-full"
-        initial={{ width: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ width: "100%" }}
-      />
+      <HorizontalLine />
     </div>
   );
 }
