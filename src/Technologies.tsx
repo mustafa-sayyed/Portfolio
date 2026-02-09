@@ -1,98 +1,114 @@
-import { motion } from "motion/react";
-import { BiLogoJavascript, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
-import { FaCss3, FaDocker, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa6";
 import { Button } from "./components/ui/button";
-import { DiMongodb } from "react-icons/di";
-import {
-  SiExpress,
-  SiGit,
-  SiGithubactions,
-  SiMongoose,
-  SiNginx,
-  SiPrisma,
-  SiReactquery,
-  SiRedux,
-  SiShadcnui,
-} from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import Title from "./components/Title";
 import HorizontalLine from "./components/HorizontalLine";
+import {
+  JavascriptIcon,
+  CssIcon,
+  DockerIcon,
+  GitIcon,
+  NodejsIconIcon,
+  PrismaIcon,
+  TypescriptIcon,
+  ShadcnuiIcon,
+  TailwindcssIcon,
+  ReactQueryIcon,
+  ReactIcon,
+  GithubActionsIcon,
+  GithubTwoIcon,
+  MongodbIcon,
+  NextjsIcon,
+  HtmlIcon,
+  ReduxIcon,
+  RedisIcon,
+  NginxIcon,
+  MongooseIcon,
+} from "./components/CustomIcons";
 
-const menu = [
+const menuWithCustomIcons = [
   {
-    icon: FaNodeJs,
+    icon: NodejsIconIcon,
     name: "Node.js",
   },
   {
-    icon: FaReact,
+    icon: ReactIcon,
     name: "React",
   },
   {
-    icon: BiLogoTailwindCss,
+    icon: TailwindcssIcon,
     name: "Tailwind CSS",
   },
   {
-    icon: BiLogoJavascript,
+    icon: JavascriptIcon,
     name: "JavaScript",
   },
   {
-    icon: BiLogoTypescript,
+    icon: TypescriptIcon,
     name: "TypeScript",
   },
   {
-    icon: FaHtml5,
-    name: "HTML",
-  },
-  {
-    icon: FaCss3,
+    icon: CssIcon,
     name: "CSS",
   },
   {
-    icon: DiMongodb,
+    icon: HtmlIcon,
+    name: "HTML",
+  },
+  {
+    icon: MongodbIcon,
     name: "MongoDB",
   },
   {
-    icon: SiMongoose,
-    name: "Mongoose",
-  },
-  {
-    icon: SiRedux,
-    name: "React Redux",
-  },
-  {
-    icon: SiShadcnui,
+    icon: ShadcnuiIcon,
     name: "Shadcn UI",
   },
   {
-    icon: FaGithub,
+    icon: GithubTwoIcon,
     name: "GitHub",
   },
   {
-    icon: SiGit,
+    icon: GitIcon,
     name: "Git",
+  },
+  {
+    icon: GithubActionsIcon,
+    name: "GitHub Actions",
+  },
+  {
+    icon: PrismaIcon,
+    name: "Prisma",
+  },
+  {
+    icon: DockerIcon,
+    name: "Docker",
+  },
+  {
+    icon: ReactQueryIcon,
+    name: "React Query",
+  },
+  {
+    icon: NextjsIcon,
+    name: "Next.js",
+  },
+  {
+    icon: RedisIcon,
+    name: "Redis",
+  },
+  {
+    icon: ReduxIcon,
+    name: "Redux",
   },
   {
     icon: SiExpress,
     name: "Express.js",
   },
   {
-    icon: SiNginx,
+    icon: NginxIcon,
     name: "Nginx",
   },
   {
-    icon: SiGithubactions,
-    name: "GitHub Actions",
-  },
-  {
-    icon: SiPrisma,
-    name: "Prisma",
-  },
-  {
-    icon: FaDocker,
-    name: "Docker",
-  },
-  {
-    icon: SiReactquery,
-    name: "React Query",
+    icon: MongooseIcon,
+    name: "Mongoose",
   },
 ];
 
@@ -101,9 +117,11 @@ function Technologies() {
     <div>
       <div className="min-h-[70vh]">
         <Title title="Technologies" />
-        <p className="text-lg font-light mt-2">Here are some of the technologies I work with:</p>
-        <div className="flex flex-wrap gap-2 mt-8">
-          {menu.map((item, index) => (
+        <p className="text-lg font-light mt-2">
+          Here are some of the technologies I work with:
+        </p>
+        <div className="flex flex-wrap gap-2 mt-8 ">
+          {menuWithCustomIcons.map((item, index) => (
             <Button key={index} variant={"outline"}>
               <item.icon />
               {item.name}

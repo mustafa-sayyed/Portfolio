@@ -17,8 +17,8 @@ function About() {
             designing systems that are scalable, secure, and maintainable.
           </p>
           <p>
-            What sets me apart is how I learn. I don’t like treating technologies as black
-            boxes — I prefer understanding things from first principles. I like
+            What sets me apart is how I learn and build. I don’t like treating technologies as black
+            boxes. I understanding things from first principles. I do
             experimenting, breaking things, fixing them, and then rebuilding them better.
           </p>
         </div>
