@@ -15,7 +15,6 @@ import {
   ReactQueryIcon,
   ReactIcon,
   GithubActionsIcon,
-  GithubTwoIcon,
   MongodbIcon,
   NextjsIcon,
   HtmlIcon,
@@ -24,20 +23,9 @@ import {
   NginxIcon,
   MongooseIcon,
 } from "./components/CustomIcons";
+import { FaGithub } from "react-icons/fa6";
 
 const menuWithCustomIcons = [
-  {
-    icon: NodejsIconIcon,
-    name: "Node.js",
-  },
-  {
-    icon: ReactIcon,
-    name: "React",
-  },
-  {
-    icon: TailwindcssIcon,
-    name: "Tailwind CSS",
-  },
   {
     icon: JavascriptIcon,
     name: "JavaScript",
@@ -47,68 +35,80 @@ const menuWithCustomIcons = [
     name: "TypeScript",
   },
   {
-    icon: CssIcon,
-    name: "CSS",
+    icon: NodejsIconIcon,
+    name: "Node.js",
   },
   {
-    icon: HtmlIcon,
-    name: "HTML",
-  },
-  {
-    icon: MongodbIcon,
-    name: "MongoDB",
-  },
-  {
-    icon: ShadcnuiIcon,
-    name: "Shadcn UI",
-  },
-  {
-    icon: GithubTwoIcon,
-    name: "GitHub",
-  },
-  {
-    icon: GitIcon,
-    name: "Git",
-  },
-  {
-    icon: GithubActionsIcon,
-    name: "GitHub Actions",
-  },
-  {
-    icon: PrismaIcon,
-    name: "Prisma",
-  },
-  {
-    icon: DockerIcon,
-    name: "Docker",
+    icon: ReactIcon,
+    name: "React",
   },
   {
     icon: ReactQueryIcon,
     name: "React Query",
   },
   {
-    icon: NextjsIcon,
-    name: "Next.js",
+    icon: ReduxIcon,
+    name: "Redux",
+  },
+  {
+    icon: HtmlIcon,
+    name: "HTML",
+  },
+  {
+    icon: CssIcon,
+    name: "CSS",
+  },
+  {
+    icon: TailwindcssIcon,
+    name: "Tailwind CSS",
+  },
+  {
+    icon: ShadcnuiIcon,
+    name: "Shadcn UI",
+  },
+  {
+    icon: MongodbIcon,
+    name: "MongoDB",
+  },
+  {
+    icon: MongooseIcon,
+    name: "Mongoose",
+  },
+  {
+    icon: PrismaIcon,
+    name: "Prisma",
   },
   {
     icon: RedisIcon,
     name: "Redis",
   },
   {
-    icon: ReduxIcon,
-    name: "Redux",
+    icon: GitIcon,
+    name: "Git",
   },
   {
-    icon: SiExpress,
-    name: "Express.js",
+    icon: FaGithub,
+    name: "GitHub",
+  },
+  {
+    icon: GithubActionsIcon,
+    name: "GitHub Actions",
+  },
+  {
+    icon: DockerIcon,
+    name: "Docker",
   },
   {
     icon: NginxIcon,
     name: "Nginx",
   },
   {
-    icon: MongooseIcon,
-    name: "Mongoose",
+    icon: NextjsIcon,
+    name: "Next.js",
+  },
+  {
+    icon: SiExpress,
+    name: "Express.js",
   },
 ];
 
@@ -120,10 +120,10 @@ function Technologies() {
         <p className="text-lg font-light mt-2">
           Here are some of the technologies I work with:
         </p>
-        <div className="flex flex-wrap gap-2 mt-8 ">
+        <div className="flex flex-wrap gap-2 mt-8">
           {menuWithCustomIcons.map((item, index) => (
             <Button key={index} variant={"outline"}>
-              <item.icon />
+              <item.icon className="dark:text-white/70" />
               {item.name}
             </Button>
           ))}

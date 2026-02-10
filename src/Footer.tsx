@@ -8,7 +8,7 @@ function Footer() {
         href="https://github.com/mustafa-sayyed"
         target="_blank"
       >
-        <FaGithub className="hover:text-white"/>
+        <FaGithub className="dark:hover:text-white"/>
       </a>
     </div>
   );
