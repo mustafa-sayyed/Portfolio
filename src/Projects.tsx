@@ -1,4 +1,4 @@
-import { Dot, Link, Linkedin } from "lucide-react";
+import { Dot, Link } from "lucide-react";
 import {
   Accordion,
   AccordionButton,
