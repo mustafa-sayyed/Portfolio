@@ -6,7 +6,6 @@ import Connect from "./Connect";
 import { ThemeTogglerButton } from "./components/ThemeBtn";
 
 function Hero() {
-
   return (
     <div>
       <div className="flex items-center justify-between w-full h-16">
@@ -32,10 +31,13 @@ function Hero() {
             alt="Mustafa Sayyed"
             className="object-cover dark:opacity-80 w-40 h-40 rounded-full"
           />
-          <div className="text-center sm:text-left flex flex-col gap-5">
-            <motion.h1 className="text-3xl sm:text-5xl z-50 dark:text-gray-400">
+          <div className="text-center sm:text-left flex flex-col gap-3 dark:text-gray-300">
+            <h1 className="text-3xl sm:text-5xl z-50">
               Mustafa Sayyed
-            </motion.h1>
+            </h1>
+            <p className="text-sm mb-2">
+              20 • Engineer • Full Stack Developer
+            </p>
             <Connect />
           </div>
         </div>

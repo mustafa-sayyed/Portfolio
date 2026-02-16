@@ -1,4 +1,4 @@
-import { Dot, ExternalLink, Link } from "lucide-react";
+import { Dot, ExternalLink } from "lucide-react";
 import {
   Accordion,
   AccordionButton,
@@ -7,7 +7,7 @@ import {
 } from "./components/animate-ui/components/headless/accordion";
 import HorizontalLine from "./components/HorizontalLine";
 import { Button } from "./components/ui/button";
-import { FaGithub, FaLink } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 import Title from "./components/Title";
 
 const projects = [
