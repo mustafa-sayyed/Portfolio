@@ -3,11 +3,9 @@ import { Button } from "./components/ui/button";
 import profilePic from "./assets/profile.png";
 import HorizontalLine from "./components/HorizontalLine";
 import Connect from "./Connect";
-import { useTheme } from "./context/useTheme";
-import { Moon, Sun } from "lucide-react";
+import { ThemeTogglerButton } from "./components/ThemeBtn";
 
 function Hero() {
-  const { theme, toggleTheme } = useTheme();
 
   return (
     <div>
@@ -17,17 +15,8 @@ function Hero() {
             Mustafa Sayyed
           </Button>
         </a>
-
         <div className="flex items-center gap-2">
-          <Button
-            variant="outline"
-            className="cursor-pointer"
-            onClick={() => toggleTheme()}
-          >
-            {theme === "light" ?
-              <Sun />
-            : <Moon />}
-          </Button>
+          <ThemeTogglerButton />
         </div>
       </div>
       <motion.hr

@@ -80,8 +80,8 @@
 }
 
 .dark {
-  --background: #020617;
-  --foreground: #6a7282;
+  --background: #030303;
+  --foreground: #a7a9ae;
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -123,6 +123,12 @@
 }
 
 ::selection {
-  background-color: #020617;
-  color: var(--primary);
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }

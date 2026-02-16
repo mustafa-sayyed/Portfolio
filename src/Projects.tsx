@@ -1,4 +1,4 @@
-import { Dot, Link } from "lucide-react";
+import { Dot, ExternalLink, Link } from "lucide-react";
 import {
   Accordion,
   AccordionButton,
@@ -7,13 +7,16 @@ import {
 } from "./components/animate-ui/components/headless/accordion";
 import HorizontalLine from "./components/HorizontalLine";
 import { Button } from "./components/ui/button";
-import { FaGithub } from "react-icons/fa6";
+import { FaGithub, FaLink } from "react-icons/fa6";
 import Title from "./components/Title";
 
 const projects = [
   {
     name: "SnapShop",
-    link: "https://snapshop.mustafasayyed.dev",
+    links: [
+      { link: "https://snapshop.mustafasayyed.dev", name: "Live" },
+      { link: "https://snapshop-admin.mustafasayyed.dev", name: "Admin" },
+    ],
     githubLink: "https://github.com/mustafa-sayyed/snapshop",
     image: "",
     description:
@@ -44,12 +47,14 @@ const projects = [
     ],
   },
   {
-    name: "WriteYourThoughts",
-    link: "https://writeyourthoughts.mustafasayyed.dev",
-    githubLink: "https://github.com/mustafa-sayyed/writeyourthoughts",
+    name: "WYL - WriteYourLogs",
+    links: [
+      { link: "https://wyl.mustafasayyed.dev", name: "Live" },
+    ],
+    githubLink: "https://github.com/mustafa-sayyed/writeyourlogs",
     image: "",
     description:
-      "A full-featured blogging platform built with React.js and Appwrite for backend services, enabling users to create, edit, and share their thoughts with a community of writers.",
+      "An AI Powered Blogging platform built with React.js and Appwrite for backend services, enabling users to create, edit, and share their blogs.",
     techStack: ["React.js", "Appwrite", "Vite", "Tailwind CSS"],
     features: [
       "Secure user authentication and authorization with Appwrite",
@@ -57,6 +62,7 @@ const projects = [
       "Image uploads and media management",
       "Database and file storage with Appwrite backend services",
       "Responsive design for seamless access across devices",
+      "State Management with React Redux",
     ],
   },
 ];
@@ -67,8 +73,7 @@ function Projects() {
       <div>
         <Title title="Proof of Work" />
         <p className="mt-2 text-lg font-light">
-          Here are some of the projects I've worked on. Click on each project to see more
-          details, including the tech stack and features and links of Projects.
+          Here are some of the projects I've worked on.
         </p>
       </div>
 
@@ -87,23 +92,29 @@ function Projects() {
               </AccordionButton>
               <AccordionPanel>
                 <div className="flex flex-col gap-3">
-                  <div className="flex items-center gap-10">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline flex gap-1"
-                    >
-                      Link <Link />
-                    </a>
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline flex gap-1"
-                    >
-                      GitHub <FaGithub />
-                    </a>
+                  <div className="flex items-center gap-4">
+                    {project.links.map((link) => (
+                      <Button variant="outline" key={link.link} className="cursor-pointer">
+                        <a
+                          href={link.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline flex gap-1 items-center"
+                        >
+                          {link.name} <ExternalLink /> 
+                        </a>
+                      </Button>
+                    ))}
+                    <Button variant="outline" className="cursor-pointer">
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline flex gap-1 items-center"
+                      >
+                         GitHub <FaGithub /> 
+                      </a>
+                    </Button>
                   </div>
                   <div>
                     <h1 className="text-lg font-semibold mb-2">Tech Stack:</h1>
