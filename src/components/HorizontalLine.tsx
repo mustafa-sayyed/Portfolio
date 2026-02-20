@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
 
-function HorizontalLine() {
+function HorizontalLine({ className = "" }: { className?: string }) {
   return (
     <motion.hr
-      className="h-0.5 w-full my-10"
+      className={cn("h-0.5 w-full my-10", className)}
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       transition={{ duration: 1 }}

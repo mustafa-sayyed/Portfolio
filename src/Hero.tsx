@@ -17,7 +17,7 @@ function Hero() {
           <ThemeTogglerButton />
         </div>
       </div>
-      <HorizontalLine />
+      <HorizontalLine className="my-0" />
       <div className="flex items-center justify-center flex-col mt-40">
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <img
