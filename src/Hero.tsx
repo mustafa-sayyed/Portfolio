@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Button } from "./components/ui/button";
 import profilePic from "./assets/profile.png";
 import HorizontalLine from "./components/HorizontalLine";
@@ -18,25 +17,20 @@ function Hero() {
           <ThemeTogglerButton />
         </div>
       </div>
-      <motion.hr
-        className="h-0.5 w-full"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        transition={{ duration: 1 }}
-      />
+      <HorizontalLine />
       <div className="flex items-center justify-center flex-col mt-40">
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <img
             src={profilePic}
             alt="Mustafa Sayyed"
-            className="object-cover dark:opacity-80 w-40 h-40 rounded-full"
+            className="object-cover w-40 h-40 rounded-full"
           />
-          <div className="text-center sm:text-left flex flex-col gap-3 dark:text-gray-300">
+          <div className="text-center sm:text-left flex flex-col gap-2 dark:text-gray-300">
             <h1 className="text-3xl sm:text-5xl z-50">
               Mustafa Sayyed
             </h1>
-            <p className="text-sm mb-2">
-              20 • Engineer • Full Stack Developer
+            <p className="font-light mb-2">
+              19 • Engineer • Full Stack Developer
             </p>
             <Connect />
           </div>
