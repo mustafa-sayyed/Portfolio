@@ -1,8 +1,8 @@
-import { Button } from "./components/ui/button";
+import { Button } from "../components/ui/button";
 import profilePic from "./assets/profile.png";
-import HorizontalLine from "./components/HorizontalLine";
+import HorizontalLine from "../components/HorizontalLine";
 import Connect from "./Connect";
-import { ThemeTogglerButton } from "./components/ThemeBtn";
+import { ThemeTogglerButton } from "../components/ThemeBtn";
 
 function Hero() {
   return (

@@ -4,11 +4,11 @@ import {
   AccordionButton,
   AccordionItem,
   AccordionPanel,
-} from "./components/animate-ui/components/headless/accordion";
-import HorizontalLine from "./components/HorizontalLine";
-import { Button } from "./components/ui/button";
+} from "../components/animate-ui/components/headless/accordion";
+import HorizontalLine from "../components/HorizontalLine";
+import { Button } from "../components/ui/button";
 import { FaGithub } from "react-icons/fa6";
-import Title from "./components/Title";
+import Title from "../components/Title";
 
 const projects = [
   {

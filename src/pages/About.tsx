@@ -1,5 +1,5 @@
-import HorizontalLine from "./components/HorizontalLine";
-import Title from "./components/Title";
+import HorizontalLine from "../components/HorizontalLine";
+import Title from "../components/Title";
 
 function About() {
   return (

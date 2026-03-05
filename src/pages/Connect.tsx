@@ -1,5 +1,5 @@
 import { MdEmail } from "react-icons/md";
-import { Button } from "./components/ui/button";
+import { Button } from "../components/ui/button";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
 import { BsTwitterX } from "react-icons/bs";
 import { IoDocumentTextOutline } from "react-icons/io5";
@@ -8,7 +8,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./components/animate-ui/components/animate/tooltip";
+} from "../components/animate-ui/components/animate/tooltip";
 
 const connectMenus = [
   {

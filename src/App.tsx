@@ -1,8 +1,8 @@
-import About from "./About";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Technologies from "./Technologies";
+import About from "./pages/About";
+import Footer from "./pages/Footer";
+import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
+import Technologies from "./pages/Technologies";
 
 function App() {
   return (

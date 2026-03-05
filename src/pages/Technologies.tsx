@@ -1,7 +1,7 @@
-import { Button } from "./components/ui/button";
+import { Button } from "../components/ui/button";
 import { SiExpress } from "react-icons/si";
-import Title from "./components/Title";
-import HorizontalLine from "./components/HorizontalLine";
+import Title from "../components/Title";
+import HorizontalLine from "../components/HorizontalLine";
 import {
   JavascriptIcon,
   CssIcon,
@@ -22,7 +22,7 @@ import {
   RedisIcon,
   NginxIcon,
   MongooseIcon,
-} from "./components/CustomIcons";
+} from "../components/CustomIcons";
 import { FaGithub } from "react-icons/fa6";
 
 const menuWithCustomIcons = [
