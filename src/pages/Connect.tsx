@@ -9,6 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "../components/animate-ui/components/animate/tooltip";
+import { handleClick } from "@/lib/posthog";
 
 const connectMenus = [
   {
@@ -16,7 +17,7 @@ const connectMenus = [
     link: "https://drive.google.com/file/d/1l9UAORrPx9grfxk51OBsKPqR9F2MLSjy/view?usp=sharing",
     icon: IoDocumentTextOutline,
   },
-  { 
+  {
     name: "LinkedIn",
     link: "https://linkedin.com/in/mustafa-sayyed",
     icon: GrLinkedin,
@@ -44,15 +45,22 @@ function Connect() {
       <div className="flex gap-2 items-center">
         <TooltipProvider>
           {connectMenus.map((menu) => (
-            <Tooltip side="bottom" key={menu.name}  >
+            <Tooltip side="bottom" key={menu.name}>
               <TooltipTrigger>
-                <Button variant="outline" className="cursor-pointer" key={menu.link}>
+                <Button
+                  variant="outline"
+                  className="cursor-pointer"
+                  onClick={() => handleClick(menu.name)}
+                  key={menu.link}
+                >
                   <a href={menu.link} target="_blank" className="flex items-center gap-2">
                     <menu.icon />
                   </a>
                 </Button>
               </TooltipTrigger>
-              <TooltipContent><p>{menu.name}</p></TooltipContent>
+              <TooltipContent>
+                <p>{menu.name}</p>
+              </TooltipContent>
             </Tooltip>
           ))}
         </TooltipProvider>

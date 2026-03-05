@@ -4,13 +4,22 @@ import "./index.css";
 import App from "./App.tsx";
 import { TooltipProvider } from "./components/animate-ui/components/animate/tooltip.tsx";
 import { ThemeContextProvider } from "./context/useTheme.tsx";
+import posthog from 'posthog-js'; 
+import { PostHogProvider } from '@posthog/react' 
+
+posthog.init(import.meta.env.VITE_PUBLIC_POSTHOG_TOKEN, { 
+  api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST, 
+  defaults: '2026-01-30', 
+}); 
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeContextProvider>
-      <TooltipProvider>
-        <App />
-      </TooltipProvider>
-    </ThemeContextProvider>
+    <PostHogProvider client={posthog}>
+      <ThemeContextProvider>
+        <TooltipProvider>
+          <App />
+        </TooltipProvider>
+      </ThemeContextProvider>
+    </PostHogProvider>
   </StrictMode>,
 );

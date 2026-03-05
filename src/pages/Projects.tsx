@@ -9,6 +9,7 @@ import HorizontalLine from "../components/HorizontalLine";
 import { Button } from "../components/ui/button";
 import { FaGithub } from "react-icons/fa6";
 import Title from "../components/Title";
+import { handleClick } from "@/lib/posthog";
 
 const projects = [
   {
@@ -67,6 +68,7 @@ const projects = [
   },
 ];
 
+
 function Projects() {
   return (
     <div>
@@ -84,7 +86,7 @@ function Projects() {
               key={project.name}
               className="rounded-lg border p-4 my-2 border-b-4 last:border-b-4"
             >
-              <AccordionButton className="cursor-pointer">
+              <AccordionButton className="cursor-pointer" onClick={() => handleClick(project.name)} >
                 <div className="flex flex-col gap-2">
                   <p className="text-3xl font-semibold">{project.name}</p>
                   <p className="font-light">{project.description}</p>
@@ -105,7 +107,7 @@ function Projects() {
                         </a>
                       </Button>
                     ))}
-                    <Button variant="outline" className="cursor-pointer">
+                    <Button variant="outline" className="cursor-pointer" onClick={() => handleClick(`${project.name}_github_link`)} >
                       <a
                         href={project.githubLink}
                         target="_blank"
