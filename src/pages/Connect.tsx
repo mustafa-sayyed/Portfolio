@@ -14,7 +14,7 @@ import { handleClick } from "@/lib/posthog";
 const connectMenus = [
   {
     name: "Resume",
-    link: "https://drive.google.com/file/d/1l9UAORrPx9grfxk51OBsKPqR9F2MLSjy/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1G-pAXZspbfJ3q1SG298G9BWbwR1p_z0f/view?usp=drive_link",
     icon: IoDocumentTextOutline,
   },
   {
