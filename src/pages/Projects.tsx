@@ -52,11 +52,11 @@ const projects = [
     links: [
       { link: "https://wyl.mustafasayyed.dev", name: "Live" },
     ],
-    githubLink: "https://github.com/mustafa-sayyed/writeyourlogs",
+    githubLink: "https://github.com/mustafa-sayyed/write-your-logs",
     image: "",
     description:
-      "An AI Powered Blogging platform built with React.js and Appwrite for backend services, enabling users to create, edit, and share their blogs.",
-    techStack: ["React.js", "Appwrite", "Vite", "Tailwind CSS"],
+      "An Blogging platform built with React.js and Appwrite for backend services, enabling users to create, edit, and share their blogs.",
+    techStack: ["React.js", "Typescript", "Appwrite", "Redux", "React Router", "Tailwind CSS"],
     features: [
       "Secure user authentication and authorization with Appwrite",
       "Rich-text editor for creating and formatting blog posts",

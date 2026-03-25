@@ -30,7 +30,7 @@ function Hero() {
               Mustafa Sayyed
             </h1>
             <p className="font-light mb-2">
-              19 • Engineer • Full Stack Developer
+              20 • Engineer • Full Stack Developer
             </p>
             <Connect />
           </div>
