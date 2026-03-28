@@ -29,8 +29,8 @@ function Hero() {
             <h1 className="text-3xl sm:text-5xl z-50">
               Mustafa Sayyed
             </h1>
-            <p className="font-light mb-2">
-              20 • Engineer • Full Stack Developer
+            <p className="font-light mb-2 ml-1 italic">
+              20 • AI Engineer • Full Stack Developer
             </p>
             <Connect />
           </div>
