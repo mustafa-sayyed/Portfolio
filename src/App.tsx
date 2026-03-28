@@ -1,4 +1,5 @@
 import About from "./pages/About";
+import Articles from "./pages/Articles";
 import Footer from "./pages/Footer";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
+        <Articles />
         <Technologies />
         <Footer />
       </div>
