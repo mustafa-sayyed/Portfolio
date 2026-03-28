@@ -11,9 +11,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-   server: {
-    proxy: {
-      '/convert': 'https://www.toptal.com/developers/feed2json',
-    },
-  },
 })
