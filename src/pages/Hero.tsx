@@ -9,7 +9,7 @@ function Hero() {
     <div>
       <div className="flex items-center justify-between w-full h-16">
         <a href="/">
-          <Button variant="outline" className="rounded-full cursor-pointer">
+          <Button variant="outline" className="cursor-pointer font-dancing-script text-lg">
             Mustafa Sayyed
           </Button>
         </a>
@@ -29,7 +29,7 @@ function Hero() {
             <h1 className="text-3xl sm:text-5xl z-50">
               Mustafa Sayyed
             </h1>
-            <p className="font-light mb-2 ml-1 italic">
+            <p className="font-light mb-2 ml-1 italic text-sm ">
               20 • AI Engineer • Full Stack Developer
             </p>
             <Connect />
