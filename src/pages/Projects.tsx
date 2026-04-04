@@ -84,7 +84,7 @@ function Projects() {
           {projects.map((project) => (
             <AccordionItem
               key={project.name}
-              className="rounded-lg border p-4 my-2 border-b-4 last:border-b-4"
+              className="rounded-lg border dark:border-white/20 border-black/40 p-4 my-2 border-b-4 last:border-b-4"
             >
               <AccordionButton className="cursor-pointer" onClick={() => handleClick(project.name)} >
                 <div className="flex flex-col gap-2">
